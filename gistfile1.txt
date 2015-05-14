@@ -1,0 +1,557 @@
+{
+ "metadata": {
+  "celltoolbar": "Slideshow",
+  "name": "",
+  "signature": "sha256:d4a6cf40e8b6213065fa07d4eb88959096fe1c966149900d33898bd97b2dac1b"
+ },
+ "nbformat": 3,
+ "nbformat_minor": 0,
+ "worksheets": [
+  {
+   "cells": [
+    {
+     "cell_type": "heading",
+     "level": 1,
+     "metadata": {
+      "slideshow": {
+       "slide_type": "slide"
+      }
+     },
+     "source": [
+      "Data Analysis with\n",
+      "IPython Notebook & Pandas"
+     ]
+    },
+    {
+     "cell_type": "heading",
+     "level": 2,
+     "metadata": {
+      "slideshow": {
+       "slide_type": "fragment"
+      }
+     },
+     "source": [
+      "Grazia D'Aversa"
+     ]
+    },
+    {
+     "cell_type": "heading",
+     "level": 3,
+     "metadata": {
+      "slideshow": {
+       "slide_type": "fragment"
+      }
+     },
+     "source": [
+      "software engineer & data specialist @ Adtech Data Team"
+     ]
+    },
+    {
+     "cell_type": "heading",
+     "level": 1,
+     "metadata": {
+      "slideshow": {
+       "slide_type": "slide"
+      }
+     },
+     "source": [
+      "IPython "
+     ]
+    },
+    {
+     "cell_type": "heading",
+     "level": 2,
+     "metadata": {
+      "slideshow": {
+       "slide_type": "fragment"
+      }
+     },
+     "source": [
+      "IPython provides an architecture for interactive computing"
+     ]
+    },
+    {
+     "cell_type": "heading",
+     "level": 4,
+     "metadata": {
+      "slideshow": {
+       "slide_type": "fragment"
+      }
+     },
+     "source": [
+      "    - Powerful interactive shells\n",
+      "    \n",
+      "    "
+     ]
+    },
+    {
+     "cell_type": "heading",
+     "level": 4,
+     "metadata": {
+      "slideshow": {
+       "slide_type": "fragment"
+      }
+     },
+     "source": [
+      "    - Support for interactive data visualization\n"
+     ]
+    },
+    {
+     "cell_type": "heading",
+     "level": 4,
+     "metadata": {
+      "slideshow": {
+       "slide_type": "fragment"
+      }
+     },
+     "source": [
+      "    - Browser-based notebook"
+     ]
+    },
+    {
+     "cell_type": "heading",
+     "level": 6,
+     "metadata": {
+      "slideshow": {
+       "slide_type": "fragment"
+      }
+     },
+     "source": [
+      "The focus of the project is Python, but architecture is language agnostic.\n",
+      "Kernels for other languages such as Julia and Haskell are actively developed and used"
+     ]
+    },
+    {
+     "cell_type": "heading",
+     "level": 1,
+     "metadata": {
+      "slideshow": {
+       "slide_type": "slide"
+      }
+     },
+     "source": [
+      "IPython Notebook\n"
+     ]
+    },
+    {
+     "cell_type": "markdown",
+     "metadata": {},
+     "source": [
+      "<img src=\"notebook_cells_r_2.png\">"
+     ]
+    },
+    {
+     "cell_type": "heading",
+     "level": 5,
+     "metadata": {
+      "slideshow": {
+       "slide_type": "fragment"
+      }
+     },
+     "source": [
+      "- web-based user interface to IPython \n",
+      "(In-browser editing, syntax highlighting, tab completion and autoindentation\n"
+     ]
+    },
+    {
+     "cell_type": "heading",
+     "level": 4,
+     "metadata": {
+      "slideshow": {
+       "slide_type": "fragment"
+      }
+     },
+     "source": [
+      "- pretty graphs\n"
+     ]
+    },
+    {
+     "cell_type": "markdown",
+     "metadata": {
+      "slideshow": {
+       "slide_type": "fragment"
+      }
+     },
+     "source": [
+      "<img src=\"image.png\">"
+     ]
+    },
+    {
+     "cell_type": "heading",
+     "level": 4,
+     "metadata": {
+      "slideshow": {
+       "slide_type": "fragment"
+      }
+     },
+     "source": [
+      "- Can make slideshows"
+     ]
+    },
+    {
+     "cell_type": "heading",
+     "level": 1,
+     "metadata": {
+      "slideshow": {
+       "slide_type": "slide"
+      }
+     },
+     "source": [
+      "Pandas"
+     ]
+    },
+    {
+     "cell_type": "heading",
+     "level": 4,
+     "metadata": {
+      "slideshow": {
+       "slide_type": "fragment"
+      }
+     },
+     "source": [
+      "- Build on top of NumPy : fast multidimensional array"
+     ]
+    },
+    {
+     "cell_type": "heading",
+     "level": 4,
+     "metadata": {
+      "slideshow": {
+       "slide_type": "fragment"
+      }
+     },
+     "source": [
+      "- Make Data Analysis fast and easy"
+     ]
+    },
+    {
+     "cell_type": "heading",
+     "level": 4,
+     "metadata": {
+      "slideshow": {
+       "slide_type": "fragment"
+      }
+     },
+     "source": [
+      "- Provides two main datastructures: Series & DataFrame"
+     ]
+    },
+    {
+     "cell_type": "heading",
+     "level": 1,
+     "metadata": {
+      "slideshow": {
+       "slide_type": "slide"
+      }
+     },
+     "source": [
+      "Installation"
+     ]
+    },
+    {
+     "cell_type": "heading",
+     "level": 2,
+     "metadata": {
+      "slideshow": {
+       "slide_type": "fragment"
+      }
+     },
+     "source": [
+      "Installation using pip (python install python)\n",
+      "\n"
+     ]
+    },
+    {
+     "cell_type": "heading",
+     "level": 3,
+     "metadata": {
+      "slideshow": {
+       "slide_type": "fragment"
+      }
+     },
+     "source": [
+      "package management system used to install & manage software packages written in Python"
+     ]
+    },
+    {
+     "cell_type": "heading",
+     "level": 4,
+     "metadata": {
+      "slideshow": {
+       "slide_type": "fragment"
+      }
+     },
+     "source": [
+      "- pip install ipython tornado pyzmq\n"
+     ]
+    },
+    {
+     "cell_type": "heading",
+     "level": 4,
+     "metadata": {
+      "slideshow": {
+       "slide_type": "fragment"
+      }
+     },
+     "source": [
+      "- pip install numpy pandas matplotlib "
+     ]
+    },
+    {
+     "cell_type": "heading",
+     "level": 3,
+     "metadata": {
+      "slideshow": {
+       "slide_type": "fragment"
+      }
+     },
+     "source": [
+      "Run Python"
+     ]
+    },
+    {
+     "cell_type": "heading",
+     "level": 6,
+     "metadata": {
+      "slideshow": {
+       "slide_type": "fragment"
+      }
+     },
+     "source": [
+      "$ ipython notebook"
+     ]
+    },
+    {
+     "cell_type": "heading",
+     "level": 1,
+     "metadata": {
+      "slideshow": {
+       "slide_type": "slide"
+      }
+     },
+     "source": [
+      "Save Notebook"
+     ]
+    },
+    {
+     "cell_type": "heading",
+     "level": 4,
+     "metadata": {
+      "slideshow": {
+       "slide_type": "fragment"
+      }
+     },
+     "source": [
+      "Notebooks are saved with ipynb extension\n"
+     ]
+    },
+    {
+     "cell_type": "heading",
+     "level": 4,
+     "metadata": {
+      "slideshow": {
+       "slide_type": "fragment"
+      }
+     },
+     "source": [
+      "They can be saved in version control as python notebook"
+     ]
+    },
+    {
+     "cell_type": "heading",
+     "level": 4,
+     "metadata": {
+      "slideshow": {
+       "slide_type": "fragment"
+      }
+     },
+     "source": [
+      "Notebooks can also be converted with nbconvert: "
+     ]
+    },
+    {
+     "cell_type": "heading",
+     "level": 5,
+     "metadata": {
+      "slideshow": {
+       "slide_type": "fragment"
+      }
+     },
+     "source": [
+      "ipython nbconvert --to FORMAT notebook.ipynb \n"
+     ]
+    },
+    {
+     "cell_type": "heading",
+     "level": 5,
+     "metadata": {
+      "slideshow": {
+       "slide_type": "fragment"
+      }
+     },
+     "source": [
+      "where FORMAT can be python, html, presentation, tex (and then transformed to PDF)"
+     ]
+    },
+    {
+     "cell_type": "heading",
+     "level": 1,
+     "metadata": {
+      "slideshow": {
+       "slide_type": "slide"
+      }
+     },
+     "source": [
+      "Other Interesting topics"
+     ]
+    },
+    {
+     "cell_type": "heading",
+     "level": 2,
+     "metadata": {
+      "slideshow": {
+       "slide_type": "fragment"
+      }
+     },
+     "source": [
+      "- Use some of this techniques on some of the available open data "
+     ]
+    },
+    {
+     "cell_type": "heading",
+     "level": 4,
+     "metadata": {
+      "slideshow": {
+       "slide_type": "fragment"
+      }
+     },
+     "source": [
+      "-- Interesting website with information about open & reseach data: http://www.dublinked.com/"
+     ]
+    },
+    {
+     "cell_type": "heading",
+     "level": 2,
+     "metadata": {
+      "slideshow": {
+       "slide_type": "fragment"
+      }
+     },
+     "source": [
+      "- Use better visualization tools"
+     ]
+    },
+    {
+     "cell_type": "heading",
+     "level": 4,
+     "metadata": {
+      "slideshow": {
+       "slide_type": "fragment"
+      }
+     },
+     "source": [
+      "-- http://vincent.readthedocs.org/en/latest/ ( easy to build visualizations on top of D3 with Vega )\n"
+     ]
+    },
+    {
+     "cell_type": "heading",
+     "level": 4,
+     "metadata": {
+      "slideshow": {
+       "slide_type": "fragment"
+      }
+     },
+     "source": [
+      "<img src=\"vincent_vega_2.png\">"
+     ]
+    },
+    {
+     "cell_type": "heading",
+     "level": 1,
+     "metadata": {
+      "slideshow": {
+       "slide_type": "slide"
+      }
+     },
+     "source": [
+      "References"
+     ]
+    },
+    {
+     "cell_type": "heading",
+     "level": 4,
+     "metadata": {
+      "slideshow": {
+       "slide_type": "fragment"
+      }
+     },
+     "source": [
+      "- documentation: http://pandas.pydata.org\n"
+     ]
+    },
+    {
+     "cell_type": "heading",
+     "level": 4,
+     "metadata": {
+      "slideshow": {
+       "slide_type": "fragment"
+      }
+     },
+     "source": [
+      "- documentation in PDF: http://pandas.pydata.org/pandas-docs/stable/pandas.pdf \n",
+      "\n"
+     ]
+    },
+    {
+     "cell_type": "heading",
+     "level": 4,
+     "metadata": {
+      "slideshow": {
+       "slide_type": "fragment"
+      }
+     },
+     "source": [
+      "- book: \"Python for Data Analysis\" by Wes McKinney (initial creator of Pandas) : http://www.amazon.com/Python-Data-Analysis-Wrangling-IPython/dp/1449319793"
+     ]
+    },
+    {
+     "cell_type": "heading",
+     "level": 4,
+     "metadata": {
+      "slideshow": {
+       "slide_type": "fragment"
+      }
+     },
+     "source": [
+      "- my notebook shared on gist + nbviewer:  http://nbviewer.ipython.org/gist/anonymous/53b2ffb12041bb975066"
+     ]
+    },
+    {
+     "cell_type": "heading",
+     "level": 4,
+     "metadata": {
+      "slideshow": {
+       "slide_type": "fragment"
+      }
+     },
+     "source": [
+      "- other interesting notebooks: http://nbviewer.ipython.org/"
+     ]
+    },
+    {
+     "cell_type": "heading",
+     "level": 1,
+     "metadata": {
+      "slideshow": {
+       "slide_type": "slide"
+      }
+     },
+     "source": [
+      "Thank you!"
+     ]
+    }
+   ],
+   "metadata": {}
+  }
+ ]
+}
